@@ -1,0 +1,6 @@
+GPO start up scipts:
+  powershell Get-ChildItem -Force C:\Windows\System32\GroupPolicy\Machine\Scripts\ 
+  powershell type C:\Windows\System32\GroupPolicy\Machine\Scripts\scripts.ini
+  powershell Remove-Item -Force C:\Windo0ws\System32\GroupPolicy\Machine\Scripts\scripts.ini
+  powershell Move-Item -force -path C:\scripts.ini -destination C:\Windows\System32\GroupPolicy\Machine\Scripts\
+  http://cybersyndicates.com/2016/01/system-context-persistence-in-gpo-startup/
